@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remy M Ali</title>
+    <link href="fb.css" type="text/css" rel="stylesheet"
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+         <div class="logo">
+            <a href="demo.html" class="logo-text">facebook</a>
+         </div>
+         <div class="login">
+            <form>
+            <table class="login-controls">
+                <tr>
+                    <td><label class="login-label">Email</label></td>
+                    <td><label class="login-label">Password</label></td>
+                </tr>
+                <tr>
+                    <td><input type="email" ></td>
+                    <td><input type="password"></td>
+                    <td><input type="submit" class="sub-button"  value="Login"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a class="forgotten" href="forgoten.html">Forgotten account? </a></td>
+                </tr>
+            </table>
+        </form>
+         </div>
+        </div>
+        <div class="main-body">
+            <div class="left-section">
+                <p class="para">Facebook helps you to connect and share with the<br> people in your life.</p>
+                <img src="/fb.png" alt="" class="fb">
+            </div>
+            <div class="right-section">
+                <H2>Create an account</H2>
+                <p>It's free and always will be.</p>
+                <form class="signup-form" id="signup-form">
+                   <span> <input type="text" id="fname" name="fname" value="fname"> 
+                    <input type="text" id="lname" name="lname" placeholder=""> </span>
+                    
+                    <input type="email" id="email" name="email" placeholder="">
+                    
+                    <input type="email" id="remail" name="remail" placeholder="">
+                    
+                    <input type="password" id="pswd" name="pswd" placeholder="">
+                    
+                    <h4>Birthday:</h4>
+                    <span><select name="day" id="day">
+                        <option value="">Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option></select>
+                        <select name="month" id="month">
+                            <option value="Month">Month</option></select>
+                        <select name="year" id="year" value="year">
+                            <option value="Year">Year</option></select></span>
+                            <br>
+                    <span><h4><input type="radio"id="Female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio"id="male" name="gender" value="male">
+                            <label for="male">Male</label></h4>
+                    </span>
+                    <button type="submit" class="submitbutton" id="submitbutton">Submit</button>
+                
+            </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #screen{
+            width: 300px;
+            height: 200px;
+            border: 1px solid #969696;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+         
+    </div>
+    <button onclick="color('Green')">Green</button>
+         <button onclick="color('Red')">Red</button>
+         <button onclick="color('Yellow')">Yellow</button>
+         <div id="bottom">
+            <input type="text" id="fEntry">
+            <input type="button" onclick=display() id="entry" value="Done">
+            <p id="para"></p>
+         </div>
+    <script>
+        function color(value)
+        {
+            document.getElementById("screen").style.backgroundColor=value
+        }
+        function display()
+        {
+            console.log(document.getElementById('fEntry').value)
+            let textEntered=document.getElementById('fEntry').value
+            console.log(textEntered)
+            document.getElementById('para').innerHTML=textEntered
+            if(textEntered=="bakecuisine")
+            {
+            alert("you  are great")
+            }
+        }
+    </script>
+</body>
+</html>
